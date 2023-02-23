@@ -1,0 +1,200 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* :root {
+  --blue-1 : #03001C ;
+  --blue-2 : #301E67;
+  --blue-3 : #5B8FB9;
+  --blue-4 : #B6EADA;
+  --white : #FFFF;
+  --grey  : #D7E9B9;
+  --shadow-dark : rgba(0,0,0,0.5);
+  --shadow-light : rgba(255,255,255,0.5);
+
+} */
+:root {
+  /* --blue-1 : #2B3A55; */
+  --blue-1 : #7F5283;
+
+  --blue-3 : #291F71;
+  --blue-2 : #F2E5E5;
+  --yellow : #DEBACE;
+  --white : #FCE2DB;
+  --grey  : #D7E9B9;
+  --shadow-dark : rgba(0,0,0,0.5);
+  --shadow-light : rgba(255,255,255,0.5);
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+
+body {
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px ;
+  width: 100%;
+  height: 100vh;
+  /* background-color: var(--blue-1); */
+  /* background-image: url(assets/cloud.jpeg); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.container{
+  width: 400px;
+  height: 80vh;
+  background-color:  var(--yellow) ;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px var(--shadow-light);
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+
+
+}
+
+.upper-data{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 40%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+
+}
+
+.upper-data img {
+
+  position: absolute;
+  top : 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.weather-data{
+  /* position: relative; */
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: var(--blue-4);
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  justify-content:first baseline;
+  font-size: 1em;
+
+}
+
+.country {
+  position: relative;
+  color : var(--blue-3);
+  text-align: center;
+  font-size: 1.5em;
+  /* z-index: 1; */
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.temperature {
+  position: relative;
+
+  color : var(--blue-3);
+  text-align: center;
+  font-size: 3.2em;
+  font-weight: 900;
+  margin-right: 12.5px;
+  margin-top: 2px;
+
+}
+
+
+.lower-data{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 60%;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-bottom: 0.6em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  display: flex;
+  flex-direction: column;
+}
+
+.informations{
+  position: relative;
+  text-align: center;
+  color: var(--blue-3);
+  margin: 0.5em;
+  font-weight: 900;
+  text-shadow: 2px 2px 2px var(--shadow-light);
+
+}
+
+.information-container{
+  /* flex: 1; */
+  /* background-color: var(--blue-2); */
+  background-color: var(--white);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  /* margin-top: 1em;
+  margin-bottom: 0em;
+  margin-left: 0.5em;
+  margin-right: 0.5em; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 98%;
+  box-shadow: 2px 2px 5px var(--shadow-dark);
+
+}
+
+.info-box{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  /* height: 50%; */
+}
+
+.info-img{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4em;
+  /* height: 50%; */
+}
+
+
+.info-img img{
+  width: 5em;
+  /* margin-left: 20px; */
+  align-items: center;
+}
+
+.info-img span{
+  color: var(--blue-3);
+  font-size: 1.2em;
+}
+
+.info-value{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--blue-3);
+
+}

@@ -1,0 +1,95 @@
+<div class="all">
+  <div class="container">
+  <form class="example-form">
+    <table class="example-full-width" cellspacing="0"><tr>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Matricule</mat-label>
+        <input matInput placeholder="">
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Nom</mat-label>
+        <input matInput placeholder="">
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Prenom </mat-label>
+        <input matInput maxlength="5" placeholder="">
+        <!-- <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint> -->
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Grade</mat-label>
+        <input matInput placeholder="Ex. lieutenant">
+      </mat-form-field></td>
+    </tr>
+    <tr>
+
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Date Grade</mat-label>
+        <input matInput placeholder="jj/mm/aa">
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Date Naissance</mat-label>
+        <input matInput placeholder="jj/mm/aa">
+        <!-- <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint> -->
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Stamp</mat-label>
+        <input matInput placeholder="">
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Specialité</mat-label>
+        <input matInput placeholder="">
+      </mat-form-field></td>
+    </tr>
+    <tr>
+
+
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Brevet</mat-label>
+        <input matInput >
+        <!-- <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint> -->
+      </mat-form-field></td>
+
+      <!-- <td><mat-form-field class="example-full-width">
+        <mat-label>Date Debut Fonction</mat-label>
+        <input matInput placeholder="jj/mm/aa">
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Date Fin Fonction</mat-label>
+        <input matInput placeholder="jj/mm/aa">
+      </mat-form-field></td> -->
+      <td>
+        <mat-form-field class="example-form-field" appearance="fill">
+          <mat-label>Fonction</mat-label>
+          <mat-date-range-input
+            [formGroup]="campaignOne"
+            [rangePicker]="campaignOnePicker"
+            [comparisonStart]="campaignTwo.value.start"
+            [comparisonEnd]="campaignTwo.value.end">
+            <input matStartDate placeholder="Date Deb Fonction" formControlName="start">
+            <input matEndDate placeholder="Date Fin Fonction" formControlName="end">
+          </mat-date-range-input>
+          <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matIconSuffix [for]="campaignOnePicker"></mat-datepicker-toggle>
+          <mat-date-range-picker #campaignOnePicker></mat-date-range-picker>
+        </mat-form-field>
+      </td>
+
+    </tr>
+  </table>
+    <mat-form-field class="example-full-width">
+        <mat-label>Observation</mat-label>
+        <input matInput>
+        <!-- <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint> -->
+      </mat-form-field>
+  </form>
+  <div class="example">
+    <button (click)="save()">Save</button>
+    </div>
+  </div>
+
+  <!-- <div class="example">
+    <button (click)="save()">Save</button>
+    </div> -->
+</div>
+
+

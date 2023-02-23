@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="upper-data">
+      <!-- <input [(ngModel)]="temp"  /> -->
+      <!-- <img src="../assets/icy.jpeg" *ngIf="10 <= 20 "> -->
+      <!-- <img src="../assets/coldy.jpg" *ngIf="7 >= 5"> -->
+      <!-- <img src="../assets/sun.jpg" *ngIf="50 >= 21"> -->
+
+      <div class="weather-data">
+        <div class="country">Tunis</div>
+        <div class="temperature">{{14.04 | number: '1.0-0' }}°C</div>
+      </div>
+
+
+
+
+  </div>
+
+<div class="lower-data">
+<div class="informations">  More informations  </div>
+<div class="information-container">
+  <div class="info-box">
+    <div class="info-img">
+      <img src="../assets/min.png" >
+      <span>min</span>
+    </div>
+    <div class="info-value">
+      10°C
+    </div>
+  </div>
+
+  <div class="info-box">
+    <div class="info-img">
+      <img src="../assets/max.png" >
+      <span>max</span>
+    </div>
+    <div class="info-value">
+      25°C
+    </div>
+  </div>
+  <div class="info-box">
+    <div class="info-img">
+      <img src="../assets/My project-1.png" >
+      <span>humidity</span>
+    </div>
+    <div class="info-value">
+      70%
+    </div>
+  </div>
+  <div class="info-box">
+    <div class="info-img">
+      <img src="../assets/wind.png" >
+      <span>wind</span>
+    </div>
+    <div class="info-value">
+      11Km/h
+    </div>
+  </div>
+</div>
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+<router-outlet></router-outlet>
